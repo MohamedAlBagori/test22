@@ -98,7 +98,7 @@ namespace test22
                 guna2DataGridView1.Columns[4].HeaderText = "Prix";
                 guna2DataGridView1.Columns[5].HeaderText = "Code de client";
                 guna2DataGridView1.Columns[6].HeaderText = "Code de facture";
-                //guna2ComboBox1.DataSource = dt;   << hadi mkhessaxi tkon hna !!!!!!!!!!>>
+                //guna2ComboBox1.DataSource = dt;   << hadi mkhessaxi tkon hna !!!!!!!!!!!>>
 
                 dr.Close();
                 dr = null;
