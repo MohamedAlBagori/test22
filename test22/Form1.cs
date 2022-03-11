@@ -79,7 +79,7 @@ namespace test22
             SqlConnection cn;
             string cs = @"Data source=.\sqlexpress ;initial catalog =GMOM;user Id = sa;Password=123456";
 
-            //if (guna2ComboBox1.SelectedIndex != -1)
+            if (guna2ComboBox1.SelectedIndex != -1)
             {
 
 
@@ -90,7 +90,6 @@ namespace test22
                 SqlDataReader dr = com.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Load(dr);
-
                 guna2DataGridView1.DataSource = dt;
                 guna2DataGridView1.Columns[0].HeaderText = "Code de monture";
                 guna2DataGridView1.Columns[1].HeaderText = "Type";
@@ -99,7 +98,7 @@ namespace test22
                 guna2DataGridView1.Columns[4].HeaderText = "Prix";
                 guna2DataGridView1.Columns[5].HeaderText = "Code de client";
                 guna2DataGridView1.Columns[6].HeaderText = "Code de facture";
-                guna2ComboBox1.DataSource = dt;
+                //guna2ComboBox1.DataSource = dt;   << hadi mkhessaxi tkon hna !!!!!!!!!!>>
 
                 dr.Close();
                 dr = null;
